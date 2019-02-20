@@ -1,0 +1,27 @@
+{
+  "name": "lab04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "fs": "0.0.1-security",
+    "jest": "^24.1.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node loop.js",
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaatay/lab04.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaatay/lab04/issues"
+  },
+  "homepage": "https://github.com/jaatay/lab04#readme"
+}
