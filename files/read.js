@@ -14,10 +14,27 @@ const convertToJson = buffer => {
     return newConvert;
 }
 
+//method to convert each sentence into a list item
+const convertToListItem = bufferArray => {
+    for(let i = 0; i < bufferArray.length; i++){
+        if(bufferArray[i] === 46){
+
+            bufferArray[i] = 178;
+           //bufferArray.splice(bufferArray[i], 0, 60, 108, 105, 62);
+            //bufferArray.splice(bufferArray[i], 0, 105);
+           // bufferArray.splice(bufferArray[i], 0, 108);
+            //bufferArray.splice(bufferArray[i], 0, 60);
+        }
+    }
+}
+
 //FILE CHANGE DATA
-//article tag begin
+//article tags
 const articleTagBegin = [60, 97, 114, 116, 105, 99, 108, 101, 62];
 const articleTagEnd = [60, 47, 97, 114, 116, 105, 99, 108, 101, 62];
+
+//list tags
+const listTag = [60, 108, 105, 62];
 
 //method to read file
 const readThis = file => {
@@ -27,10 +44,12 @@ const readThis = file => {
         }
 
         console.log(data);
-       // let newBuffer = bufferConvert(data);
+
         let newJSON = convertToJson(data);
 
         let tempJSON = articleTagBegin.concat(newJSON.data).concat(articleTagEnd);
+
+        convertToListItem(tempJSON);
 
         newJSON.data = tempJSON;
 
