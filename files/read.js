@@ -20,10 +20,7 @@ const convertToListItem = bufferArray => {
         if(bufferArray[i] === 46){
 
             bufferArray[i] = 178;
-           //bufferArray.splice(bufferArray[i], 0, 60, 108, 105, 62);
-            //bufferArray.splice(bufferArray[i], 0, 105);
-           // bufferArray.splice(bufferArray[i], 0, 108);
-            //bufferArray.splice(bufferArray[i], 0, 60);
+          
         }
     }
 }
@@ -62,3 +59,5 @@ const readThis = file => {
 }
 
 readThis('./files/pair-programming.txt');
+
+module.exports = readThis;
