@@ -4,10 +4,10 @@
 
 ### Author: Jesse Atay
 
-[![Build Status](https://travis-ci.org/jaatay/lab02.svg?branch=master)](https://travis-ci.org/jaatay/lab02)
+[![Build Status](https://travis-ci.org/jaatay/lab04.svg?branch=master)](https://travis-ci.org/jaatay/lab04)
 
 ### Links and Resources
-* [repo](https://github.com/jaatay/lab02)
+* [repo](https://github.com/jaatay/lab04)
 
 
 ### Modules
